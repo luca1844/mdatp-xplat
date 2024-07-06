@@ -19,16 +19,22 @@ Options:
  -r|--remove          remove the product
  -u|--upgrade         upgrade the existing product to a newer version if available
  -o|--onboard         onboard/offboard the product with <onboarding_script>
+ -f|--offboard        offboard the product with <offboarding_script>
  -p|--passive-mode    set EPP to passive mode
+ -r|--rtp-mode        set EPP to real time protection mode. passive-mode and rtp-mode are mutually exclusive
  -t|--tag             set a tag by declaring <name> and <value>. ex: -t GROUP Coders
  -m|--min_req         enforce minimum requirements
  -x|--skip_conflict   skip conflicting application verification
  -w|--clean           remove repo from package manager for a specific channel
  -y|--yes             assume yes for all mid-process prompts (highly reccomended)
+ -n|--no              remove assume yes sign
  -s|--verbose         verbose output
  -v|--version         print out script version
  -d|--debug           set debug mode
- --proxy <proxy URL>  set proxy
+ --log-path <PATH>    also log output to PATH
+ --http-proxy <URL>   set http proxy
+ --https-proxy <URL>  set https proxy
+ --ftp-proxy <URL>    set ftp proxy
  -h|--help            display help
 ```
 
